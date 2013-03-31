@@ -36,7 +36,7 @@ def encode(imgpath):
 
 class BitmessageApiClient():
     def __init__(self):
-        if api_user=='' or api_pass=='' or api_host=='' or api_port:
+        if api_user=='' or api_host=='' or api_port=='':
             if not self.getCredentialsFromKeysFile():
                 print 'Walrus is unable to send messages without access to PyBitmessage\'s API. Exiting.'
                 print 'For help read README.md or https://github.com/delicatebits/walrus/blob/master/README.md'
@@ -81,7 +81,7 @@ class BitmessageApiClient():
         from os import path, environ
         if sys.platform == 'darwin':
             if "HOME" in environ:
-                bitmessagedata = path.join(os.environ["HOME"], "Library/Application support/PyBitmessage") + '/'
+                bitmessagedata = path.join(environ["HOME"], "Library/Application support/PyBitmessage") + '/'
             else:
                 print 'Could not find home folder, please report this message and your OS X version to the BitMessage Github.'
                 sys.exit()
