@@ -50,6 +50,7 @@ todo
 - [ ] Flesh out API portion and split into separate file
 - [ ] Support multiple images per message
 - [ ] Ensure To Address is valid
+- [ ] Make compatible with Python 3
 
 help
 ----
