@@ -39,6 +39,10 @@ Options:
                         Subject of the message. Default is image name.
 ```
 
+Example of printing a base64 string of /home/user/image.png:
+
+`$ python walrus.py /home/user/image.png`
+
 todo
 ----
 
