@@ -36,18 +36,16 @@ Options:
   -f FROM, --from=FROM  Address/Label to send from
   -t TO, --to=TO        Address/Label to send to.
   -u SUBJECT, --subject=SUBJECT
-                        Subject of the message. Default is image name.```
+                        Subject of the message. Default is image name.
+```
 
 todo
 ----
 
-- [ ] Flesh out API portion and split into separate file.
-
-- [ ] Support multiple images per message
-
-- [ ] Ensure To Address is valid
-
 - [x] Get basic functionality implemented
+- [ ] Flesh out API portion and split into separate file
+- [ ] Support multiple images per message
+- [ ] Ensure To Address is valid
 
 help
 ----
